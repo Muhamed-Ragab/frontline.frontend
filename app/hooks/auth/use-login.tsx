@@ -30,7 +30,7 @@ export default function useLogin() {
     Cookies.set({
       name: "accessToken",
       value: data.data.accessToken,
-      httpOnly: import.meta.env.DEV ? false : true,
+      httpOnly: false,
       maxAge: 60 * 60 * 24 * 7, // 7 days
       path: "/",
       sameSite: "strict",
@@ -38,7 +38,7 @@ export default function useLogin() {
     Cookies.set({
       name: "refreshToken",
       value: data.data.refreshToken,
-      httpOnly: import.meta.env.DEV ? false : true,
+      httpOnly: false,
       maxAge: 60 * 60 * 24 * 30, // 30 days
       path: "/",
       sameSite: "strict",
