@@ -1,0 +1,17 @@
+.vscode/
+.DS_Store
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# Local Netlify folder
+.netlify
+
+# bun lockfile
+bun.lockb
+
+# env files
+.env
+.env.*
